@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="css/reset.css" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/jquery.backgroundvideo.js"></script>
+		<script>
+		  $(document).ready(function() {
+		  	//BASED VIDEOS LIVE HERE
+		  	var videoChoices=["uE5DNFNB7jM","ZG6zsHUCum4","OeLQOfb6IBU","YbGq5qnxbjQ","Fl6Mf4yTm7A","corY-FZAZog","wFEpnkGIRrM","zHaufokyxwU"];
+		    var id=videoChoices[Math.floor(Math.random()*videoChoices.length)];;
+		    var source= "https://youtube.com/embed/"+id+"?autoplay=1&controls=0&showinfo=0&autohide=1";
+		    $("#frame").attr('src',source);
+		    var videobackground = new $.backgroundVideo($('body'), {
+		      "align": "centerXY",
+		      "width": 1280,
+		      "height": 720,
+		    });
+			$("#vid").fadeIn(10000);		 	   
+		  });
+		</script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-48366101-2', 'thankyoubasedgod.com');
+		  ga('send', 'pageview');
+
+		</script>
+	</head>
+	<body>
+		<div class="title">Thank You<br/>Based God.</div>
+		<div class="screen" id="vid">
+			<iframe id="frame" frameborder="0" height="100%" width="100%">
+			</iframe>
+		</div>
+	</body>
+</html>
